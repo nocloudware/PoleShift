@@ -15,25 +15,25 @@ Eliges un punto (tocando el mapa o con los selectores) y la app recalcula la geo
 
 ## Capturas
 
-**1 · Elige el nuevo Polo Norte** — toca el mapa o usa el panel lateral.
+**1 · Estado inicial** — el panel con los 51 lugares y el mapa del mundo sin transformar.
 
-<img src="poleshift1.png" width="860" alt="Mapa del mundo con el punto del nuevo Polo Norte marcado">
+<img src="poleshift1.png" width="860" alt="Panel lateral de lugares junto al mapa del mundo sin transformar">
 
-**2 · El mundo reordenado** — el globo gira con el ecuador, los polos y las costas ya recalculados.
+**2 · El globo inicial** — el planeta real, con su eje de verdad, girando solo.
 
-<img src="poleshift2.png" width="640" alt="Globo 3D con la geografía reordenada según el eje elegido">
+<img src="poleshift2.png" width="640" alt="Globo 3D en su estado inicial, con el eje real de la Tierra">
 
-**3 · Las coordenadas y la tabla de ciudades** — el nuevo polo norte y su antípoda con sus coordenadas actuales, y las 14 ciudades con la latitud que les tocaría en el mundo nuevo.
+**3 · Panel y mapa ya actualizados** — al elegir un lugar, los tres selectores se resincronizan y el mapa dibuja el ecuador nuevo en amarillo.
 
-<img src="poleshift3.png" width="860" alt="Panel de coordenadas y tabla de ciudades ordenada de norte a sur">
+<img src="poleshift3.png" width="860" alt="Panel lateral y mapa con el nuevo ecuador trazado en amarillo tras elegir el polo">
 
-**4 · Fijar el eje desde el panel** — los tres selectores (norte, sur, punto sobre el ecuador) se resincronizan entre sí.
+**4 · El globo con los datos nuevos** — la geografía completa recalculada sobre el eje elegido.
 
-<img src="poleshift4.png" width="640" alt="Panel lateral con los selectores de polo norte, polo sur y ecuador">
+<img src="poleshift4.png" width="640" alt="Globo 3D reordenado según el nuevo eje, con ecuador y polos recalculados">
 
-**5 · Instalada en el móvil** — a pantalla completa, con el diseño de una sola columna.
+**5 · Listado de ciudades** — las 14 ciudades con su latitud actual y la que les tocaría en el mundo reordenado.
 
-<img src="poleshift5.png" width="420" alt="La app instalada en un teléfono, a pantalla completa">
+<img src="poleshift5.png" width="460" alt="Tabla de ciudades con la latitud actual y la nueva, ordenadas de norte a sur">
 
 ## Cómo funciona
 

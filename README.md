@@ -13,6 +13,28 @@ Eliges un punto (tocando el mapa o con los selectores) y la app recalcula la geo
 - **Tabla de ciudades:** para 14 ciudades, muestra la latitud actual y la latitud en el mundo reordenado, ordenadas de norte a sur. Marca en color cuál queda más cerca del nuevo Polo Norte, del nuevo Polo Sur y del nuevo ecuador.
 - **Panel lateral:** 51 lugares predefinidos para fijar el nuevo Polo Norte, el nuevo Polo Sur, o un punto que deba quedar sobre el nuevo ecuador. Los tres son el mismo cálculo en direcciones distintas: al elegir uno, los otros dos se resincronizan solos.
 
+## Capturas
+
+**1 · Elige el nuevo Polo Norte** — toca el mapa o usa el panel lateral.
+
+<img src="poleshift1.png" width="860" alt="Mapa del mundo con el punto del nuevo Polo Norte marcado">
+
+**2 · El mundo reordenado** — el globo gira con el ecuador, los polos y las costas ya recalculados.
+
+<img src="poleshift2.png" width="640" alt="Globo 3D con la geografía reordenada según el eje elegido">
+
+**3 · Las coordenadas y la tabla de ciudades** — el nuevo polo norte y su antípoda con sus coordenadas actuales, y las 14 ciudades con la latitud que les tocaría en el mundo nuevo.
+
+<img src="poleshift3.png" width="860" alt="Panel de coordenadas y tabla de ciudades ordenada de norte a sur">
+
+**4 · Fijar el eje desde el panel** — los tres selectores (norte, sur, punto sobre el ecuador) se resincronizan entre sí.
+
+<img src="poleshift4.png" width="640" alt="Panel lateral con los selectores de polo norte, polo sur y ecuador">
+
+**5 · Instalada en el móvil** — a pantalla completa, con el diseño de una sola columna.
+
+<img src="poleshift5.png" width="420" alt="La app instalada en un teléfono, a pantalla completa">
+
 ## Cómo funciona
 
 No hay ninguna librería de mapas. Todo son coordenadas cartesianas 3D sobre la esfera y trigonometría.
@@ -80,8 +102,10 @@ Los tres arrays están al principio del `<script>`: editar la geografía es edit
 |---|---|
 | `index.html` | Toda la app: HTML, CSS, lógica, datos y los tres canvas de dibujo. 513 líneas, cero dependencias. |
 | `manifest.json` | Manifiesto PWA: nombre, icono, pantalla fija en retrato, colores. |
-| `sw.js` | Service worker: cachea los 5 assets para uso sin conexión. |
-| `icon-{180,192,512}.png` | Iconos de la app. |
+| `sw.js` | Service worker: cachea los assets para uso sin conexión. |
+| `icon-{180,192,512}.png` | Iconos de la app: globo terráqueo con los contornos reales del planeta. El 180 va opaco para iOS, el 192/512 con esquinas redondeadas. |
+| `icon-512-maskable.png` | Variante *maskable* para Android: fondo a sangre y globo al 60 %, dentro de la zona segura. |
+| `poleshift{1..5}.png` | Capturas de pantalla usadas más arriba. |
 
 ## Ejecutar
 
